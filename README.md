@@ -41,11 +41,17 @@ MNIST/FashionMNIST image classification
 
 - v1
 
-地址和像素数据都映射到随机 HV。不量化，直接累加各个向量。使用 cos 相似度。
+使用二进制表示${0, 1}$，利用异或、求和操作。
+地址和像素数据都映射到随机 HV。
+不量化，直接累加各个向量。
+使用 cos 相似度。
 
-MNIST 测试精确度在 80% 左右，FASHION MNIST 65%。数据集读入约 256*20 个后准确率不再提升。
+不同的维度选择情况不同。
+dim = 4096，MNIST 测试精确度在 80% 左右，FASHION MNIST 65%。
+数据集读入约 256*20 个后准确率不再提升。
 
 简单量化效果很差。
+TODO: 量化
 
 ### EMG hand gesture
 
