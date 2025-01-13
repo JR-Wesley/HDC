@@ -37,9 +37,8 @@ Evaluation of some hardware parameters.
 
 ### MN & FAMN
 
-MNIST/FashionMNIST image classification
+- 数据集：MNIST/FashionMNIST image classification
 
-- v1
 
 使用二进制表示${0, 1}$，利用异或、求和操作。
 地址和像素数据都映射到随机 HV。
@@ -49,6 +48,7 @@ MNIST/FashionMNIST image classification
 不同的维度选择情况不同。
 dim = 4096，MNIST 测试精确度在 80% 左右，FASHION MNIST 65%。
 数据集读入约 256*20 个后准确率不再提升。
+torchd 训练精度也为80%左右。
 
 简单量化效果很差。
 TODO: 量化
@@ -58,6 +58,17 @@ TODO: 量化
 EMG hand gesture recognition.
 
 将 csv 数据集格式转换，利用 torchhd 训练
+
+### language
+
+- Eurolang 数据集：来自<a href="https://github.com/abbas-rahimi/HDC-Language-Recognition">abbas-rahimi HDC-Language-Recognition</a>。
+
+分为测试和训练两部分。
+
+训练目前使用 n_gram = 3，测试精准度在 88% 左右。
+torchhd 训练精度也为 95%。
+TODO: 提升精度？
+
 
 ## 总结其他的实验参考
 
