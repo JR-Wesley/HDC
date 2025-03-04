@@ -1,14 +1,12 @@
-# my HDC
+# HDC 
 
-This is my code for hyperdimensional computing (HDC). I'm still building the framework based on Pytorch. Some modules are managed as packages.
-
-The algorithm is mostly refered to some papers.
-Some codes are from D2l Pytorch, Mu Li.
+Here are my Python notebook of hyperdimensional computing (HDC) a machine learning algorithm.
+I'm still building the framework based on Pytorch.
+Some modules are managed as packages.
 More details will be added in the document later on.
 
 ## Example
 
-所有以`Example_`开头的文件。
 Here are some examples to illustrate the principal of HDC.
 
 ### Currency
@@ -19,9 +17,7 @@ Identify different country, capital, currency.
 
 Basic MAP operations including n-gram.
 
-### torchHD
-
-Some examples `torchHD` lib offers.
+- MAP: multiplication, addition, permutation.
 
 ### CA90
 
@@ -31,15 +27,17 @@ Generate random numbers using CA90 rules.
 
 Evaluation of some hardware parameters.
 
-## Experement
+## torchHD/thd
 
-所有以`exp_`开头的文件。
+Some examples that `torchHD` lib offers, which can be used for performance comparison.
+
+## Experement
 
 ### MN & FAMN
 
 - 数据集：MNIST/FashionMNIST image classification
 
-使用二进制表示${0, 1}$，利用异或、求和操作。
+使用二进制表示 ${0, 1}$，利用异或、求和操作。
 地址和像素数据都映射到随机 HV。
 对样本按图像大小量化，直接累加各个向量。
 使用 cos 相似度。
@@ -68,21 +66,25 @@ torchhd 训练精度为 95%。
 
 在 bipolar 表示下，利用符号量化到{-1, 1}，精度90%。
 
-## 总结其他的实验参考
+## 其他
 
-ref: Hyperdimensional MNIST
-https://github.com/noahgolmant/HyperdimMNIST
-一个直接的在 MNIST 上实现的代码。
-comment: 一些实现可以替换为 Pytorch 并且利用并行化。
+### Papers
+
 
 ### 工具、库
+
 ref: torch
 exampleTHD 是该库自带的一些例子
 
 ref: DataStructuresCookbook
 给出了许多不同数据结构的表示：包括序列、图、n gram
 
-### 其他
+### Projects/Repositories
+
+ref: Hyperdimensional MNIST
+https://github.com/noahgolmant/HyperdimMNIST
+一个直接的在 MNIST 上实现的代码。
+comment: 一些实现可以替换为 Pytorch 并且利用并行化。
 
 ref: HDC-EMG
 Abbas Rahimi 的 EMG 实验代码，用 matlab 实现
